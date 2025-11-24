@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- task1 -->
+    <div class="hover"></div>
+
+    <div class="sidebar">
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </div>
+
+    <!-- task2 -->
+    <div class="thumbnails">
+      <img src="images/shuffle-01.jpg" data-index="0" />
+      <img src="images/shuffle-02.jpg" data-index="1" />
+      <img src="images/shuffle-03.jpg" data-index="2" />
+      <img src="images/shuffle-04.jpg" data-index="3" />
+      <img src="images/shuffle-05.jpg" data-index="4" />
+    </div>
+
+
+    <div class="popup">
+      <span class="close">×</span>
+      <img id="bigImage" src="" />
+      <div>
+        <button id="prev">←</button>
+        <button id="next">→</button>
+      </div>
+    </div>
+
+    <!-- task3 -->
+    <h1>Simple Blog</h1>
+
+    <input type="text" id="search" placeholder=" Search.." />
+
+    <div id="posts-container"></div>
+
+    <button id="load-more">Load More</button>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

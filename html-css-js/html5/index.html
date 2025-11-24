@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>html5</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <header>
+      <h2>Logo</h2>
+      <nav>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">products</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <aside>aside</aside>
+      <div class="content">
+        <section>section 1</section>
+        <section>section 2</section>
+        <section>section 3</section>
+      </div>
+    </main>
+
+    <footer>footer</footer>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div class="progress">
+      <h3>progress</h3>
+      <progress min="0" max="100" value="0">50</progress>
+      <span>0%</span>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <div class="form">
+      <form
+        action=""
+        oninput="result.innerText = firstname.value + ' ' + lastname.value"
+      >
+        <label for="firstname">firstname</label>
+        <input type="text" name="firstname" id="firstname" /><br />
+        <label for="lastname">lastname</label>
+        <input type="text" name="lastname" id="lastname" /><br />
+        <label for="password">password</label>
+        <input type="password" name="password" id="password" /><br />
+        <label for="range">Red:</label>
+        <input type="range" name="Red" id="Red" min="0" max="255" value="0" />
+        <label for="range">Green:</label>
+        <input type="range" name="Green" id="Green" min="0" max="255" value="0" />
+        <label for="range">Blue:</label>
+        <input type="range" name="Blue" id="Blue" min="0" max="255" value="0" />
+        <p id="result"></p>
+        <input type="submit" value="send name" />
+      </form>
+    </div>
+
+    <script>
+        var p =document.querySelector("#result");
+        var red =document.querySelector("#Red");
+        var green =document.querySelector("#Green");
+        var blue =document.querySelector("#Blue");
+        var form =document.forms[0];
+        form.addEventListener("input",function() {
+            p.style.color =`rgb(${Red.value} ,${green.value},${blue.value})`
+        })
+
+
+
+      var progress = document.querySelector("progress");
+      var span = document.querySelector("span");
+      var count = 0;
+      setInterval(() => {
+        count += 1;
+        progress.value = count;
+        span.innerText = progress.value + "%";
+        if (count == 100) {
+          count = 0;
+        }
+      }, 50);
+    </script>
+  </body>
+</html>

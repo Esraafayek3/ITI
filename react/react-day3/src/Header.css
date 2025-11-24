@@ -1,0 +1,149 @@
+:root {
+  --bg: #060608;
+
+  --muted: #98a0ac;
+  --card: #060608;
+  --white: #ffffff;
+}
+
+.movie-header {
+  background: linear-gradient(180deg, var(--bg), var(--card));
+  color: var(--white);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  position: sticky;
+  top: 0;
+  z-index: 50;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.logo {
+  font-weight: 800;
+  font-size: 20px;
+  letter-spacing: 0.6px;
+  color: var(--white);
+}
+
+/* nav */
+.nav-list {
+  display: flex;
+  gap: 22px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list a {
+  color: var(--muted);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 6px 8px;
+  border-radius: 6px;
+}
+
+.nav-list a:hover {
+  color: var(--white);
+  background: rgba(255, 255, 255, 0.03);
+}
+
+/* right area */
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.03);
+  padding: 6px;
+  border-radius: 8px;
+  gap: 6px;
+}
+
+.search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--white);
+  width: 180px;
+  font-size: 14px;
+}
+
+.search-btn {
+  background: var(--accent);
+  border: none;
+  padding: 6px 8px;
+  border-radius: 6px;
+  display: inline-grid;
+  place-items: center;
+  cursor: pointer;
+  color: white;
+}
+
+/* icon button */
+.icon-btn {
+  background: transparent;
+  border: none;
+  color: var(--white);
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 6px;
+}
+
+/* hamburger (mobile) */
+.hamburger {
+  display: none;
+  width: 34px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 4px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  height: 2px;
+  background: var(--white);
+  display: block;
+  border-radius: 2px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .nav {
+    display: none; /* hide full nav on smaller screens */
+  }
+
+  .search input {
+    width: 110px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .search input {
+    display: none;
+  } /* hide input on tiny screens */
+  .search-btn {
+    padding: 6px;
+  }
+  .container {
+    gap: 10px;
+  }
+}

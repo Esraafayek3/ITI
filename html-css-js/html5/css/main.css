@@ -1,0 +1,130 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  color: white;
+  height: 100px;
+  background-color: blueviolet;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  padding: 20px;
+}
+
+header nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+header nav ul li {
+  list-style: none;
+  padding: 10px;
+}
+header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 100%;
+  font-size: 900;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: white;
+}
+main aside {
+  width: 30%;
+  background-color: #8a2be2b3;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main .content {
+  width: 70%;
+  font-size: 20px;
+  height: 400px;
+  background-color: #4d2c6c;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+.content section {
+  border: 1px solid white;
+  width: 90%;
+  text-align: center;
+  padding: 40px;
+}
+footer {
+  color: white;
+  background-color: blueviolet;
+  text-align: center;
+  padding: 17px;
+  font-weight: bold;
+}
+
+.progress {
+  width: 100%;
+  border: 1px solid #424141;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.progress h3 {
+  padding: 20px;
+  font-size: 25px;
+}
+progress {
+  border: 1px solid #3a3939ee;
+  width: 500px;
+  height: 40px;
+  appearance: none;
+}
+
+progress::-webkit-progress-bar {
+  background-color: aqua;
+}
+
+progress::-webkit-progress-value {
+  background: linear-gradient(to right, blueviolet, #4d2c6c);
+}
+.progress span {
+  padding: 20px;
+}
+.form {
+  display: flex;
+  justify-content: center;
+}
+form {
+  padding: 30px 20px;
+  font-size: 20px;
+  color: white;
+  border-radius: 7px;
+  width: 50%;
+  background: linear-gradient(to top, rgb(87, 68, 179), #2b0c7f);
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+}
+form label {
+  padding: 10px 0;
+}
+form input {
+  padding: 10px;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+[type="submit"] {
+  margin: 40px 30px 0;
+  padding: 8px 0;
+}

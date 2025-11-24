@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+  text-align: center;
+  margin: 20px;
+}
+h1 {
+  padding: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #7c1c1c;
+}
+.add-section {
+  margin-bottom: 15px;
+}
+
+#taskInput {
+  padding: 5px;
+}
+
+#addBtn {
+  padding: 6px 12px;
+  background-color: gray;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+table {
+  width: 60%;
+  margin: auto;
+}
+
+th,
+td {
+  border: 1px solid #aaa;
+  padding: 10px;
+  text-align: center;
+}
+
+th {
+  background-color: darkred;
+  color: white;
+}
+
+td {
+  background-color: #f3f3f3;
+}
+
+.done-text {
+  text-decoration: line-through;
+  
+}
+
+.delete-btn {
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.add-section {
+  margin-bottom: 15px;
+}
+.done-text {
+  text-decoration: line-through;
+}
+/* task 2 */
+#message {
+      font-size: 20px;
+      font-weight: bold;
+      margin-top: 15px;
+
+    }

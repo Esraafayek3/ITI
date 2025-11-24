@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="tabs">
+      <div class="tab active" data-tab="1">Tab One</div>
+      <div class="tab" data-tab="2">Tab Two</div>
+      <div class="tab" data-tab="3">Tab Three</div>
+      <div class="tab" data-tab="4">Tab Four</div>
+    </div>
+
+    <div id="container" class="tab-content active"></div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <input type="text" id="taskInput" placeholder="write..." />
+    <button id="addBtn">Add</button>
+
+    <li id="taskList"></li>
+
+    <script>
+      const tabContents = {
+        1: "Tab 1",
+        2: "Tab 2",
+        3: "Tab 3",
+        4: "Tab 4",
+      };
+
+      $(".tab").click(function () {
+        var tabId = $(this).data("tab");
+
+        $(".tab").removeClass("active");
+        $(this).addClass("active");
+
+        $("#container").fadeOut(200, function () {
+          $(this).html(tabContents[tabId]);
+
+          $(this).fadeIn(300);
+        });
+      });
+
+      // task 2
+
+      $("#addBtn").click(function () {
+        let task = $("#taskInput").val();
+
+        if (task !== "") {
+        
+          $("#taskList").append(
+            `<div>${task} <button class="delete-btn">Delete</button></div>`
+          );
+
+          $("#taskInput").val("");
+        }
+      });
+
+      $("#taskList").on("click", ".delete-btn", function () {
+        $(this).parent().remove(); 
+      });
+    </script>
+  </body>
+</html>

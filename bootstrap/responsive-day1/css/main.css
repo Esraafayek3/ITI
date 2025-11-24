@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background: #d9d6d2;
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0;
+  border-top: 1px solid black;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  border: 1px solid black;
+  width: 45%;
+  min-width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content {
+  padding: 15px;
+  text-align: center;
+  flex-grow: 1;
+}
+
+.footer {
+  background: #d9d6d2;
+  padding: 10px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 90%;
+    margin-bottom: 30px;
+    height: 200px;
+  }
+
+  nav {
+    flex-direction: column;
+  }
+  nav a {
+    margin-bottom: 5px;
+  }
+}
+
+/* task2 */
+
+header,
+footer {
+  background: blue;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.contain {
+  display: flex;
+  gap: 10px;
+  padding: 10px;
+  height: 500px;
+}
+
+aside {
+  background: orange;
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  background: green;
+  flex: 2;
+  text-align: center;
+  padding: 20px;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .contain {
+    flex-direction: column;
+  }
+}
+
+/* task3 */
+
+.center {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.center p {
+    border: 1px solid red;
+    padding: 20px;
+}

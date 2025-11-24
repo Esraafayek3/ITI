@@ -1,0 +1,137 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+i {
+  cursor: pointer;
+}
+
+.row {
+  width: 350px;
+  height: 95%;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  background-image: linear-gradient(to top, #1b2530, #13092c);
+  box-shadow: 0px 0px 20px 20px #0000002a;
+  border-radius: 20px;
+}
+
+.content {
+  width: 100%;
+  height: 100%;
+}
+
+.image {
+  width: 100%;
+  margin: 20px 0px;
+}
+
+.content .image img {
+  width: 330px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.seek {
+  margin-top: 20px;
+}
+
+.seek p {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 900;
+  text-align: center;
+  margin: 10px;
+}
+
+#seek {
+  -webkit-appearance: none;
+  width: 330px;
+  background: none;
+  outline: none;
+}
+
+#seek::-webkit-slider-runnable-track {
+  height: 8px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#seek::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: linear-gradient(to top, #1b2530, #13092c);
+
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.play-tole {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  align-items: end;
+}
+
+.controler {
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.range {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#volume {
+  -webkit-appearance: none;
+  width: 250px;
+  background: none;
+  outline: none;
+}
+
+#volume::-webkit-slider-runnable-track {
+  height: 8px;
+  /* background: ; */
+  background: #fff;
+  border-radius: 5px;
+}
+
+#volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  background-image: linear-gradient(to top, #1b2530, #13092c);
+  border-radius: 50%;
+  cursor: pointer;
+  margin-top: -6px;
+}
+
+.play {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+}

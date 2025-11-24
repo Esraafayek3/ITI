@@ -1,0 +1,5 @@
+.nav-list a.active {
+  color: #ff5a5f;
+  font-weight: bold;
+  border-bottom: 2px solid #ff5a5f;
+}

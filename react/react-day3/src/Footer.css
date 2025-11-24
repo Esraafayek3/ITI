@@ -1,0 +1,47 @@
+.footer {
+  background-color: #060425;
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+.footer-content {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.logo {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 15px 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+
+.footer-copy {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #aaa;
+}

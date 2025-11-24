@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.section {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.section img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 0;
+}
+
+.section span {
+  position: relative;
+  z-index: 1;
+}
+
+.animate-updown span {
+  animation: updown 1s infinite alternate ease-in-out;
+}
+@keyframes updown {
+  100% {
+    transform: translateY(-30px);
+  }
+}
+
+.animate-opacity span {
+  animation: opacity 1s infinite alternate ease-in-out;
+}
+@keyframes opacity {
+  100% {
+    opacity: 0.2;
+  }
+}
+
+.animate-rotate span {
+  animation: rotate 1s linear infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-scale span {
+  animation: scaleUpDown 1s infinite alternate ease-in-out;
+}
+@keyframes scaleUpDown {
+  100% {
+    transform: scale(2);
+  }
+}
+
+/* task2 */
+.container {
+  margin: 100px;
+
+  display: flex;
+
+  justify-content: space-evenly;
+}
+#div1,
+#div2 {
+  width: 400px;
+  min-height: 250px;
+  border: 2px solid #999;
+  border-radius: 10px;
+  padding: 10px;
+  background: white;
+}
+#div1 label,
+#div2 label {
+  display: block;
+  background: #4a8cb8;
+  color: white;
+  padding: 8px;
+  margin: 5px 0;
+  border-radius: 5px;
+  cursor: grab;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+.card .image {
+  height: 300px;
+  object-fit: cover;
+  width: 50%;
+}
+.card p {
+  margin: 70px 0;
+  line-height: 2;
+  font-size: 18px;
+}
+.card-img-top {
+  width: 40%;
+  height: 200px;
+
+  object-fit: cover;
+}
+.card {
+  border: none;
+}
+.card-img {
+    height: 500px;
+    object-fit: cover;
+}
